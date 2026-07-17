@@ -585,23 +585,22 @@ Masukkan gambar:
 
 ### Gambar Visualisasi
 
-![Distribusi Nilai Akademik Mahasiswa](data/distribusi_nilai_akademik_mahasiswa.png)
+![Distribusi Nilai Akademik Mahasiswa](images/output.png)
 
-![Distribusi Jenis Kelamin](data/distribusi_jenis_kelamin.png)
+![Distribusi Jenis Kelamin](images/output2.png)
 
-![Distribusi Jam Belajar Mingguan](data/distribusi_jam_belajar_mingguan.png)
+![Distribusi Jam Belajar Mingguan](images/output3.png)
 
-![Distribusi Kehadiran Mahasiswa](data/distribusi_kehadiran_mahasiswa.png)
+![Distribusi Kehadiran Mahasiswa](images/output4.png)
 
-![Distribusi Aktivitas Membaca](data/distribusi_aktivitas_membaca.png)
+![Distribusi Aktivitas Membaca](images/output5.png)
 
-![Distribusi Kebiasaan Mencatat](data/distribusi_kebiasaan_mencatat.png)
+![Distribusi Kebiasaan Mencatat](images/output6.png)
 
-![Distribusi Tingkat Perhatian di Kelas](data/distribusi_tingkat_perhatian_di_kelas.png)
+![Distribusi Tingkat Perhatian di Kelas](images/output7.png)
 
-![Distribusi Partisipasi Project](data/distribusi_partisipasi_project.png)
+![Distribusi Partisipasi Project](images/output8.png)
 
-Berikan penjelasan setiap grafik.
 
 ```python
 plt.figure(figsize=(8,5))
@@ -626,9 +625,9 @@ Masukkan Heatmap.
 
 ### Gambar Korelasi
 
-![Heatmap Korelasi Antar Variabel](data/heatmap_korelasi_antar_variabel.png)
+![Heatmap Korelasi Antar Variabel](images/output9.png)
 
-![Korelasi Setiap Variabel terhadap Grade](data/korelasi_setiap_variabel_terhadap_grade.png)
+![Korelasi Setiap Variabel terhadap Grade](images/output10.png)
 
 Jelaskan:
 
@@ -657,9 +656,9 @@ Tampilkan grafik distribusi Grade.
 
 ### Gambar Deteksi Ketidakseimbangan
 
-![Distribusi Nilai Akademik Mahasiswa](data/distribusi_nilai_akademik_mahasiswa.png)
+![Distribusi Nilai Akademik Mahasiswa](images/output.png)
 
-![Histogram EDA](data/eda_hist.png)
+![Histogram EDA](images/output11.png)
 
 Jelaskan apakah dataset mengalami class imbalance atau tidak.
 
@@ -1015,7 +1014,7 @@ plt.show()
 
 ### Gambar 6.1 Visualisasi Decision Tree
 
-![Decision Tree](data/decision_tree_plot.png)
+![Decision Tree](images/output13.png)
 
 ### Analisis
 
@@ -1045,7 +1044,7 @@ importance = importance.sort_values(
 
 ### Gambar 6.2 Feature Importance Random Forest
 
-![Feature Importance](data/feature_importance_random_forest.png)
+![Feature Importance](images/output12.png)
 
 ### Analisis
 
@@ -1092,7 +1091,7 @@ Melalui Confusion Matrix dapat diketahui jumlah prediksi yang benar maupun predi
 
 **Gambar 7.1 Confusion Matrix Decision Tree**
 
-![Confusion Matrix Decision Tree](data/confusion_matrix_decision_tree.png)
+![Confusion Matrix Decision Tree](images/output14.png)
 
 ### Analisis
 
@@ -1106,7 +1105,7 @@ Hal tersebut menunjukkan bahwa Decision Tree masih mengalami kesulitan dalam mem
 
 **Gambar 7.2 Confusion Matrix Random Forest**
 
-![Confusion Matrix Random Forest](data/confusion_matrix_random_forest.png)
+![Confusion Matrix Random Forest](images/output15.png)
 
 ### Analisis
 
@@ -1175,7 +1174,7 @@ Agar hasil evaluasi lebih mudah dipahami, dilakukan visualisasi terhadap seluruh
 
 **Gambar 7.3 Perbandingan Performa Model**
 
-![Perbandingan Model](data/perbandingan_performa_model.png)
+![Perbandingan Model](images/output16.png)
 
 ### Analisis
 
@@ -1265,217 +1264,108 @@ Meskipun performa model belum mencapai tingkat akurasi yang tinggi, penelitian i
 ---
 
 
-# 7. Evaluation
+# 8. Kesimpulan dan Rekomendasi
 
-## 7.1 Pendahuluan
+## 8.1 Ringkasan Penelitian
 
-Evaluation merupakan tahapan terakhir dalam metodologi **CRISP-DM** yang bertujuan untuk mengukur performa model Machine Learning yang telah dibangun. Pada tahap ini dilakukan pengujian terhadap model menggunakan data uji (*testing set*) yang sebelumnya tidak digunakan selama proses pelatihan.
+Penelitian ini bertujuan untuk membangun model Machine Learning yang mampu memprediksi nilai akademik mahasiswa berdasarkan karakteristik pribadi dan aktivitas belajar menggunakan algoritma **Decision Tree** dan **Random Forest**. Dataset yang digunakan merupakan *Student Performance Dataset* yang diperoleh dari Kaggle dan terdiri atas 145 data mahasiswa dengan 16 atribut, di mana atribut **Grade** digunakan sebagai variabel target.
 
-Evaluasi dilakukan untuk mengetahui kemampuan model dalam mengklasifikasikan nilai akademik mahasiswa secara tepat serta membandingkan performa antara algoritma **Decision Tree** dan **Random Forest**.
+Proses penelitian mengikuti metodologi **CRISP-DM**, yang meliputi tahapan Business Understanding, Data Understanding, Exploratory Data Analysis (EDA), Data Preparation, Modeling, dan Evaluation. Pada tahap persiapan data dilakukan penghapusan atribut yang tidak relevan, pemeriksaan kualitas data, transformasi data kategorikal menggunakan Label Encoding, serta pembagian dataset menjadi data latih dan data uji dengan rasio 80:20.
 
-Pada penelitian ini digunakan beberapa metrik evaluasi, yaitu:
-
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
-
-Keempat metrik tersebut dipilih karena mampu memberikan gambaran yang lebih komprehensif mengenai performa model, terutama pada kasus klasifikasi multikelas.
+Selanjutnya dibangun dua model klasifikasi menggunakan algoritma Decision Tree dan Random Forest. Kedua model kemudian dievaluasi menggunakan metrik Accuracy, Precision, Recall, F1-Score, serta Confusion Matrix untuk mengetahui kemampuan model dalam memprediksi kategori nilai akademik mahasiswa.
 
 ---
 
-# 7.2 Confusion Matrix
+## 8.2 Pencapaian Tujuan Penelitian
 
-Confusion Matrix merupakan metode evaluasi yang digunakan untuk membandingkan hasil prediksi model dengan label sebenarnya pada data uji.
+Berdasarkan hasil penelitian yang telah dilakukan, tujuan penelitian secara umum telah berhasil dicapai.
 
-Melalui Confusion Matrix dapat diketahui jumlah prediksi yang benar maupun prediksi yang salah untuk setiap kelas sehingga memberikan gambaran mengenai kemampuan model dalam melakukan klasifikasi.
+Adapun pencapaian setiap tujuan penelitian adalah sebagai berikut.
 
----
+1. **Membangun model prediksi nilai akademik mahasiswa.**  
+   Tujuan ini berhasil dicapai dengan membangun dua model klasifikasi menggunakan algoritma Decision Tree dan Random Forest melalui library Scikit-learn.
 
-## 7.2.1 Confusion Matrix Decision Tree
+2. **Membandingkan performa kedua algoritma.**  
+   Perbandingan dilakukan menggunakan metrik Accuracy, Precision, Recall, dan F1-Score. Hasil evaluasi menunjukkan bahwa kedua algoritma memiliki kemampuan yang berbeda dalam melakukan klasifikasi.
 
-**Gambar 7.1 Confusion Matrix Decision Tree**
+3. **Menentukan algoritma dengan performa terbaik.**  
+   Berdasarkan hasil evaluasi, Random Forest memberikan performa yang lebih baik dibandingkan Decision Tree pada seluruh metrik yang digunakan sehingga dipilih sebagai model terbaik dalam penelitian ini.
 
-![Confusion Matrix Decision Tree](data/confusion_matrix_decision_tree.png)
-
-### Analisis
-
-Berdasarkan Confusion Matrix di atas, terlihat bahwa model Decision Tree mampu melakukan prediksi pada sebagian kelas dengan benar, namun masih terdapat cukup banyak kesalahan klasifikasi pada beberapa kategori Grade.
-
-Hal tersebut menunjukkan bahwa Decision Tree masih mengalami kesulitan dalam membedakan karakteristik antar kelas, sehingga menghasilkan nilai Accuracy yang relatif rendah.
+Dengan demikian, seluruh tujuan penelitian telah tercapai sesuai dengan ruang lingkup yang telah ditetapkan.
 
 ---
 
-## 7.2.2 Confusion Matrix Random Forest
+## 8.3 Kesimpulan Hasil Evaluasi
 
-**Gambar 7.2 Confusion Matrix Random Forest**
-
-![Confusion Matrix Random Forest](data/confusion_matrix_random_forest.png)
-
-### Analisis
-
-Confusion Matrix Random Forest menunjukkan bahwa model mampu menghasilkan jumlah prediksi yang benar lebih banyak dibandingkan Decision Tree.
-
-Walaupun masih terdapat beberapa kesalahan klasifikasi, distribusi prediksi yang dihasilkan terlihat lebih baik sehingga memberikan peningkatan pada seluruh metrik evaluasi.
-
-Hal ini menunjukkan bahwa pendekatan *ensemble learning* yang digunakan Random Forest mampu meningkatkan kemampuan model dalam mengenali pola pada dataset.
-
----
-
-# 7.3 Hasil Evaluasi Model
-
-Performa kedua model diukur menggunakan empat metrik evaluasi, yaitu Accuracy, Precision, Recall, dan F1-Score.
-
-### Implementasi
-
-```python
-accuracy_dt = accuracy_score(y_test, y_pred_dt)
-precision_dt = precision_score(
-    y_test,
-    y_pred_dt,
-    average="weighted"
-)
-recall_dt = recall_score(
-    y_test,
-    y_pred_dt,
-    average="weighted"
-)
-f1_dt = f1_score(
-    y_test,
-    y_pred_dt,
-    average="weighted"
-)
-
-accuracy_rf = accuracy_score(y_test, y_pred_rf)
-precision_rf = precision_score(
-    y_test,
-    y_pred_rf,
-    average="weighted"
-)
-recall_rf = recall_score(
-    y_test,
-    y_pred_rf,
-    average="weighted"
-)
-f1_rf = f1_score(
-    y_test,
-    y_pred_rf,
-    average="weighted"
-)
-```
-
-### Tabel 7.1 Hasil Evaluasi Model
+Berdasarkan hasil pengujian terhadap data uji, diperoleh hasil evaluasi sebagai berikut.
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |--------|---------:|----------:|-------:|---------:|
-| Decision Tree | **0.1724** | **0.1422** | **0.1724** | **0.1540** |
+| Decision Tree | 0.1724 | 0.1422 | 0.1724 | 0.1540 |
 | Random Forest | **0.2069** | **0.1954** | **0.2069** | **0.1879** |
 
----
+Hasil tersebut menunjukkan bahwa algoritma **Random Forest** secara konsisten memperoleh nilai yang lebih tinggi dibandingkan **Decision Tree** pada seluruh metrik evaluasi.
 
-# 7.4 Visualisasi Perbandingan Model
+Meskipun demikian, nilai akurasi kedua model masih tergolong rendah. Hal ini menunjukkan bahwa model yang dibangun belum mampu melakukan klasifikasi nilai akademik secara optimal pada dataset yang digunakan. Rendahnya performa model kemungkinan dipengaruhi oleh jumlah data yang relatif sedikit, kompleksitas klasifikasi multikelas, distribusi kelas yang kurang merata, serta belum diterapkannya teknik optimasi model.
 
-Agar hasil evaluasi lebih mudah dipahami, dilakukan visualisasi terhadap seluruh metrik evaluasi.
-
-**Gambar 7.3 Perbandingan Performa Model**
-
-![Perbandingan Model](data/perbandingan_performa_model.png)
-
-### Analisis
-
-Grafik menunjukkan bahwa algoritma Random Forest memperoleh nilai Accuracy, Precision, Recall, dan F1-Score yang lebih tinggi dibandingkan Decision Tree.
-
-Walaupun selisih performa kedua model tidak terlalu besar, Random Forest secara konsisten memberikan hasil yang lebih baik pada seluruh metrik evaluasi.
+Walaupun demikian, penelitian ini tetap berhasil menunjukkan proses penerapan Machine Learning untuk kasus prediksi nilai akademik mahasiswa dan memberikan gambaran mengenai perbandingan performa dua algoritma klasifikasi yang umum digunakan.
 
 ---
 
-# 7.5 Analisis Hasil Evaluasi
+## 8.4 Kontribusi Penelitian
 
-### Accuracy
+Penelitian ini memberikan beberapa kontribusi, baik dari sisi akademik maupun implementasi, yaitu sebagai berikut.
 
-Accuracy menunjukkan persentase prediksi yang berhasil diklasifikasikan dengan benar oleh model.
+1. Menunjukkan penerapan metodologi CRISP-DM dalam pengembangan model Machine Learning pada bidang pendidikan.
 
-Model Decision Tree memperoleh Accuracy sebesar **17,24%**, sedangkan Random Forest memperoleh Accuracy sebesar **20,69%**.
+2. Memberikan contoh implementasi algoritma Decision Tree dan Random Forest untuk kasus klasifikasi nilai akademik mahasiswa.
 
-Nilai tersebut menunjukkan bahwa Random Forest memiliki kemampuan klasifikasi yang lebih baik dibandingkan Decision Tree pada dataset yang digunakan.
+3. Menyediakan hasil perbandingan performa kedua algoritma sebagai referensi dalam penelitian serupa.
 
----
-
-### Precision
-
-Precision menunjukkan tingkat ketepatan model dalam memberikan prediksi terhadap setiap kelas.
-
-Decision Tree memperoleh Precision sebesar **14,22%**, sedangkan Random Forest memperoleh Precision sebesar **19,54%**.
-
-Hasil tersebut menunjukkan bahwa Random Forest menghasilkan prediksi yang lebih tepat dibandingkan Decision Tree.
+4. Menunjukkan bahwa pemanfaatan data akademik dapat menjadi langkah awal dalam pengembangan sistem pendukung keputusan berbasis Artificial Intelligence di lingkungan perguruan tinggi.
 
 ---
 
-### Recall
+## 8.5 Keterbatasan Penelitian
 
-Recall menunjukkan kemampuan model dalam mengenali seluruh data yang sebenarnya termasuk dalam suatu kelas.
+Penelitian ini masih memiliki beberapa keterbatasan yang dapat memengaruhi hasil pemodelan, antara lain.
 
-Decision Tree memperoleh Recall sebesar **17,24%**, sedangkan Random Forest memperoleh Recall sebesar **20,69%**.
+1. Dataset yang digunakan hanya terdiri atas 145 data sehingga jumlah observasi relatif terbatas untuk membangun model klasifikasi multikelas.
 
-Nilai Recall yang lebih tinggi menunjukkan bahwa Random Forest lebih baik dalam mengidentifikasi data pada masing-masing kategori Grade.
+2. Penelitian hanya menggunakan dua algoritma Machine Learning, yaitu Decision Tree dan Random Forest, sehingga belum dilakukan perbandingan dengan algoritma lain yang mungkin memberikan performa lebih baik.
 
----
+3. Model dibangun menggunakan parameter bawaan (*default parameter*) tanpa proses **Hyperparameter Tuning**, sehingga performa model belum dioptimalkan.
 
-### F1-Score
+4. Evaluasi model hanya menggunakan satu kali pembagian data (*train-test split*) dan belum menerapkan teknik **Cross Validation**, sehingga hasil evaluasi masih bergantung pada pembagian data tersebut.
 
-F1-Score merupakan rata-rata harmonis antara Precision dan Recall sehingga memberikan gambaran keseimbangan performa model.
-
-Decision Tree memperoleh F1-Score sebesar **15,40%**, sedangkan Random Forest memperoleh **18,79%**.
-
-Nilai tersebut menunjukkan bahwa Random Forest memiliki keseimbangan performa yang lebih baik dibandingkan Decision Tree.
+5. Penelitian tidak melakukan proses penyeimbangan kelas (*class balancing*) apabila terdapat distribusi kelas yang tidak merata.
 
 ---
 
-# 7.6 Pembahasan Hasil
+## 8.6 Rekomendasi Pengembangan
 
-Berdasarkan hasil evaluasi, algoritma Random Forest memberikan performa yang lebih baik dibandingkan Decision Tree pada seluruh metrik evaluasi.
+Berdasarkan hasil penelitian dan keterbatasan yang ditemukan, beberapa rekomendasi yang dapat dilakukan pada penelitian selanjutnya adalah sebagai berikut.
 
-Hal ini sesuai dengan karakteristik Random Forest sebagai algoritma *ensemble learning* yang membangun banyak pohon keputusan dan menggabungkan hasil prediksinya melalui mekanisme *majority voting*. Pendekatan tersebut membuat Random Forest lebih mampu melakukan generalisasi terhadap data dibandingkan Decision Tree tunggal.
+1. Menggunakan dataset dengan jumlah data yang lebih besar agar model dapat mempelajari pola data secara lebih baik.
 
-Meskipun demikian, nilai Accuracy yang diperoleh kedua model masih relatif rendah. Kondisi ini dapat dipengaruhi oleh beberapa faktor, antara lain:
+2. Melakukan proses **Hyperparameter Tuning** menggunakan metode seperti Grid Search atau Random Search untuk memperoleh konfigurasi model yang optimal.
 
-1. Jumlah data yang relatif sedikit, yaitu hanya **145 data**.
-2. Variabel target terdiri atas beberapa kategori (*multiclass classification*), sehingga proses klasifikasi menjadi lebih kompleks.
-3. Distribusi data pada setiap kelas tidak sepenuhnya seimbang.
-4. Penelitian belum menerapkan proses **Hyperparameter Tuning** untuk memperoleh konfigurasi model yang optimal.
-5. Penelitian belum menggunakan teknik **Cross Validation** sehingga evaluasi hanya dilakukan berdasarkan satu kali pembagian data.
+3. Menerapkan teknik **Cross Validation** agar hasil evaluasi lebih stabil dan representatif.
 
-Dengan demikian, hasil penelitian ini menunjukkan bahwa kualitas dataset dan strategi pemodelan memiliki pengaruh yang besar terhadap performa model Machine Learning.
+4. Menggunakan teknik penanganan ketidakseimbangan kelas, seperti SMOTE atau metode *resampling*, apabila dataset memiliki distribusi kelas yang tidak seimbang.
 
----
+5. Membandingkan performa dengan algoritma Machine Learning lain, seperti Support Vector Machine (SVM), XGBoost, LightGBM, CatBoost, maupun Artificial Neural Network (ANN).
 
-# 7.7 Model Terbaik
-
-Berdasarkan seluruh hasil evaluasi, algoritma **Random Forest** dipilih sebagai model terbaik pada penelitian ini.
-
-Pemilihan tersebut didasarkan pada hasil evaluasi sebagai berikut.
-
-| Metrik | Decision Tree | Random Forest |
-|---------|--------------:|--------------:|
-| Accuracy | 17,24% | **20,69%** |
-| Precision | 14,22% | **19,54%** |
-| Recall | 17,24% | **20,69%** |
-| F1-Score | 15,40% | **18,79%** |
-
-Random Forest menghasilkan nilai yang lebih tinggi pada seluruh metrik evaluasi sehingga dinilai memiliki kemampuan klasifikasi yang lebih baik dibandingkan Decision Tree.
-
-Meskipun performa model belum mencapai tingkat akurasi yang tinggi, penelitian ini berhasil menunjukkan bahwa algoritma Random Forest lebih efektif digunakan pada dataset Student Performance dibandingkan Decision Tree.
+6. Mengembangkan model ke dalam bentuk aplikasi berbasis web menggunakan Streamlit atau Flask sehingga dapat digunakan sebagai sistem pendukung keputusan dalam memprediksi nilai akademik mahasiswa.
 
 ---
 
-# 7.8 Ringkasan Evaluasi
+## 8.7 Penutup
 
-Tahap evaluasi menunjukkan bahwa kedua algoritma berhasil membangun model klasifikasi untuk memprediksi nilai akademik mahasiswa.
+Penelitian ini menunjukkan bahwa penerapan Machine Learning dapat dimanfaatkan untuk melakukan prediksi nilai akademik mahasiswa berdasarkan data karakteristik dan aktivitas belajar. Meskipun performa model yang diperoleh masih perlu ditingkatkan, proses penelitian telah berhasil mengimplementasikan seluruh tahapan pengembangan model mulai dari pemahaman masalah, pengolahan data, pembangunan model, hingga evaluasi menggunakan metodologi CRISP-DM.
 
-Berdasarkan hasil pengujian menggunakan data uji, algoritma **Random Forest** memperoleh performa terbaik dengan Accuracy sebesar **20,69%**, Precision sebesar **19,54%**, Recall sebesar **20,69%**, dan F1-Score sebesar **18,79%**.
+Hasil penelitian ini diharapkan dapat menjadi referensi bagi penelitian selanjutnya dalam mengembangkan model prediksi akademik yang lebih akurat serta mendukung penerapan Artificial Intelligence pada bidang pendidikan.
 
-Hasil tersebut menunjukkan bahwa pendekatan *ensemble learning* mampu meningkatkan performa klasifikasi dibandingkan Decision Tree tunggal. Namun, performa model masih dapat ditingkatkan melalui penambahan jumlah data, penerapan teknik Hyperparameter Tuning, serta penggunaan metode Cross Validation yang akan menjadi rekomendasi pada bab berikutnya.
 
 # 9. Referensi
 
