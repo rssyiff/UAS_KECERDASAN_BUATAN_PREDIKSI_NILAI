@@ -323,7 +323,7 @@ Evaluasi dilakukan menggunakan:
 ## Perbandingan Performa Model
 
 <p align="center">
-<img src="images/perbandingan_performa_model.png" width="850">
+<img src="images/output16.png" width="850">
 </p>
 
 ---
@@ -361,7 +361,7 @@ Meskipun performa model masih dapat ditingkatkan melalui penambahan jumlah data,
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/rssyiff/UAS.git
+git clone https://github.com/rssyiff/UAS_KECERDASAN_BUATAN_PREDIKSI_NILAI.git
 ```
 
 ### 2. Masuk ke Folder Project
