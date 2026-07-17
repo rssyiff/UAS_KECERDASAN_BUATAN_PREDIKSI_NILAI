@@ -146,7 +146,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Nilai Akademik
 
 <p align="center">
-<img src="images/distribusi_nilai_akademik_mahasiswa.png" width="650">
+<img src="images/output.png" width="650">
 </p>
 
 ---
@@ -154,7 +154,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Jenis Kelamin
 
 <p align="center">
-<img src="images/distribusi_jenis_kelamin.png" width="650">
+<img src="images/output2.png" width="650">
 </p>
 
 ---
@@ -162,7 +162,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Jam Belajar Mingguan
 
 <p align="center">
-<img src="images/distribusi_jam_belajar_mingguan.png" width="650">
+<img src="images/output3.png" width="650">
 </p>
 
 ---
@@ -170,7 +170,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Kehadiran
 
 <p align="center">
-<img src="images/distribusi_kehadiran_mahasiswa.png" width="650">
+<img src="images/output4.png" width="650">
 </p>
 
 ---
@@ -178,7 +178,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Aktivitas Membaca
 
 <p align="center">
-<img src="images/distribusi_aktivitas_membaca.png" width="650">
+<img src="images/output5.png" width="650">
 </p>
 
 ---
@@ -186,7 +186,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Kebiasaan Mencatat
 
 <p align="center">
-<img src="images/distribusi_kebiasaan_mencatat.png" width="650">
+<img src="images/output6.png" width="650">
 </p>
 
 ---
@@ -194,7 +194,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Tingkat Perhatian di Kelas
 
 <p align="center">
-<img src="images/distribusi_tingkat_perhatian_di_kelas.png" width="650">
+<img src="images/output7.png" width="650">
 </p>
 
 ---
@@ -202,7 +202,7 @@ Analisis yang dilakukan meliputi:
 ## Distribusi Partisipasi Project
 
 <p align="center">
-<img src="images/distribusi_partisipasi_project.png" width="650">
+<img src="images/output8.png" width="650">
 </p>
 
 ---
@@ -210,7 +210,7 @@ Analisis yang dilakukan meliputi:
 ## Heatmap Korelasi
 
 <p align="center">
-<img src="images/heatmap_korelasi_antar_variabel.png" width="900">
+<img src="images/output9.png" width="900">
 </p>
 
 ---
@@ -218,7 +218,7 @@ Analisis yang dilakukan meliputi:
 ## Korelasi terhadap Grade
 
 <p align="center">
-<img src="images/korelasi_setiap_variabel_terhadap_grade.png" width="750">
+<img src="images/output10.png" width="750">
 </p>
 
 ---
@@ -272,7 +272,7 @@ Kelebihan:
 ## Decision Tree
 
 <p align="center">
-<img src="images/decision_tree_plot.png" width="1000">
+<img src="images/output11.png" width="1000">
 </p>
 
 ---
@@ -280,7 +280,7 @@ Kelebihan:
 ## Feature Importance Random Forest
 
 <p align="center">
-<img src="images/feature_importance_random_forest.png" width="750">
+<img src="images/output12.png" width="750">
 </p>
 
 ---
@@ -307,7 +307,7 @@ Evaluasi dilakukan menggunakan:
 ## Confusion Matrix Decision Tree
 
 <p align="center">
-<img src="images/confusion_matrix_decision_tree.png" width="650">
+<img src="images/output14.png" width="650">
 </p>
 
 ---
@@ -315,7 +315,7 @@ Evaluasi dilakukan menggunakan:
 ## Confusion Matrix Random Forest
 
 <p align="center">
-<img src="images/confusion_matrix_random_forest.png" width="650">
+<img src="images/output15.png" width="650">
 </p>
 
 ---
