@@ -272,7 +272,7 @@ Kelebihan:
 ## Decision Tree
 
 <p align="center">
-<img src="images/output11.png" width="1000">
+<img src="images/output13.png" width="1000">
 </p>
 
 ---
